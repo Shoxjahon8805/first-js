@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: whitesmoke;">
+
+    <button style="margin-left: 88px;
+    margin-top: 300px;
+    cursor: pointer;
+    width: 58%;
+    height: 50px;
+    border-radius: 27px;
+    border: 0.5px solid #ccc;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: lightblue;" id="open">Lorem, ipsum.</button>
+
+    <dialog style="border-radius: 60px;
+    border: 0.5px solid #ccc;
+    background-color: lightblue;
+    color: whitesmoke;">
+        <h2 style="margin-left: 72px;">Lorem, ipsum dolor.</h2>
+        <p style="font-size: 19px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nulla.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sint saepe, <br> commodi possimus dolorum facilis, reiciendis eligendi vero optio laborum incidunt officia inventore mollitia qui! </p>
+
+        <button id="close" style="margin-left: 78px;
+        cursor: pointer;
+        width: 58%;
+        height: 50px;
+        border-radius: 27px;
+        border: 0.5px solid #ccc;
+        font-size: 20px;" id="open">Lorem, ipsum.</button>
+    </dialog>
+
+
+    <script>
+        const openBtn = document.querySelector
+        ('#open')
+
+        const dialog = document.querySelector
+        ('dialog')
+
+        const closeBtn = document.querySelector
+        ('#close')
+
+        openBtn.onclick = () => dialog.showModal()
+        closeBtn.onclick = () => dialog.close()
+    </script>
+
+
+</body></html>
